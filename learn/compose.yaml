@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: spring_postgres
+    restart: always
+    ports:
+      - "5432:5432"  # expõe a porta para o host
+    environment:
+      POSTGRES_DB: learnSpring
+      POSTGRES_USER: spring
+      POSTGRES_PASSWORD: spring
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
