@@ -66,6 +66,7 @@ public class UserMapper {
         addresResponseDto.setState(addressEntity.getState());
         addresResponseDto.setStreet(addressEntity.getStreet());
         addresResponseDto.setNumber(addressEntity.getNumber());
+        addresResponseDto.setZipCode(addressEntity.getZipCode());
 
         return addresResponseDto;
     }
